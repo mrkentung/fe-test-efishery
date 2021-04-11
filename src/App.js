@@ -2,7 +2,6 @@ import { useEffect } from 'react'
 import { connect } from 'react-redux'
 import * as actions from './redux/actions'
 
-import './App.css'
 import Table from '../src/components/Table'
 
 function App(props) {
