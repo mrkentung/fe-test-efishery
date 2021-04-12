@@ -226,8 +226,8 @@ const Table = (props) => {
 
   const layoutFilter = () => {
     return (
-      <div className="w-full flex mb-4 items-end justify-between pt-4">
-        <div className="flex items-center">
+      <div className="w-full flex flex-col xl:flex-row lg:flex-row mb-4 items-start xl:items-end lg:items-end justify-between pt-4">
+        <div className="flex items-center mb-4 xl:mb-0 lg:mb-0 md:w-full sm:w-full">
           <h2 className="text-3xl">Daftar Ikan</h2>
           <button className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-600 text-white ml-6" onClick={(e)=>handleModalOpen()}>
             Tambah data
