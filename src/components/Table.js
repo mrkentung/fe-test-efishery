@@ -6,6 +6,7 @@ import fromUnixTime from 'date-fns/fromUnixTime'
 import { v4 as uuidv4 } from 'uuid'
 import Modal from './Modal'
 import Alert from './Alert'
+import SearchForm from './SearchForm'
 
 const Table = (props) => {
   const [searchText, setSearchText] = useState('')
@@ -232,11 +233,10 @@ const Table = (props) => {
             Tambah data
           </button>
         </div>
-        <div>
-          <div className="relative rounded-md">
-            <input type="text" name="price" id="price" className="shadow focus:shadow-lg outline-none block w-full py-2 px-6 sm:text-sm border-gray-300 rounded-md" placeholder="Search" value={searchText}  onChange={handleFilteredData} />
-          </div>
-        </div>
+        <SearchForm 
+          searchText={searchText}
+          handleFilteredData={(e) => handleFilteredData(e)}
+        />
       </div>
     )
   }
