@@ -122,40 +122,40 @@ const Table = (props) => {
       <Modal 
         isOpened={showModal}
       >
-        <div className="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
+        <div className="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle max-w-lg w-full">
           <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
               <div className="sm:flex sm:items-start py-4">
                   <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left w-full">
-                    <h3 className="text-lg leading-6 font-medium text-gray-900" id="modal-title">
+                    <h3 className="text-left text-lg leading-6 font-medium text-gray-900" id="modal-title">
                         Tambah Data
                     </h3>
                     <div className="mt-2">
                       <div className="w-full py-2 mb-2">
-                        <label htmlFor="komoditas" className="block text-sm font-medium text-gray-700">Komoditas</label>
+                        <label htmlFor="komoditas" className="text-left block text-sm font-medium text-gray-700">Komoditas</label>
                         <div className="mt-1 relative rounded-md shadow-sm">
                           <input type="text" value={komoditasValue} onChange={(e) => handleAddData(e)} name="komoditas" id="komoditas" className="focus:ring-indigo-500 focus:border-indigo-500 block w-full py-2 px-4 sm:text-sm border-gray-300 rounded-md" placeholder="Komoditas" />  
                         </div>
                       </div>
                       <div className="w-full py-2 mb-2">
-                        <label htmlFor="provinsi" className="block text-sm font-medium text-gray-700">Provinsi</label>
+                        <label htmlFor="provinsi" className="text-left block text-sm font-medium text-gray-700">Provinsi</label>
                         <div className="mt-1 relative rounded-md shadow-sm">
                           <input type="text" value={provinsiValue} onChange={(e) => handleAddData(e)} name="provinsi" id="provinsi" className="focus:ring-indigo-500 focus:border-indigo-500 block w-full py-2 px-4 sm:text-sm border-gray-300 rounded-md" placeholder="Provinsi" />  
                         </div>
                       </div>
                       <div className="w-full py-2 mb-2">
-                        <label htmlFor="kota" className="block text-sm font-medium text-gray-700">Kota</label>
+                        <label htmlFor="kota" className="text-left block text-sm font-medium text-gray-700">Kota</label>
                         <div className="mt-1 relative rounded-md shadow-sm">
                           <input type="text" value={kotaValue} onChange={(e) => handleAddData(e)} name="kota" id="kota" className="focus:ring-indigo-500 focus:border-indigo-500 block w-full py-2 px-4 sm:text-sm border-gray-300 rounded-md" placeholder="Kota" />  
                         </div>
                       </div>
                       <div className="w-full py-2 mb-2">
-                        <label htmlFor="ukuran" className="block text-sm font-medium text-gray-700">Ukuran</label>
+                        <label htmlFor="ukuran" className="text-left block text-sm font-medium text-gray-700">Ukuran</label>
                         <div className="mt-1 relative rounded-md shadow-sm">
                           <input type="text" value={ukuranValue} onChange={(e) => handleAddData(e)} name="ukuran" id="ukuran" className="focus:ring-indigo-500 focus:border-indigo-500 block w-full py-2 px-4 sm:text-sm border-gray-300 rounded-md" placeholder="Ukuran" />  
                         </div>
                       </div>
                       <div className="w-full py-2 mb-2">
-                        <label htmlFor="harga" className="block text-sm font-medium text-gray-700">Harga</label>
+                        <label htmlFor="harga" className="text-left block text-sm font-medium text-gray-700">Harga</label>
                         <div className="mt-1 relative rounded-md shadow-sm">
                           <input type="text" value={hargaValue} onChange={(e) => handleAddData(e)} name="harga" id="harga" className="focus:ring-indigo-500 focus:border-indigo-500 block w-full py-2 px-4 sm:text-sm border-gray-300 rounded-md" placeholder="Harga" />  
                         </div>
